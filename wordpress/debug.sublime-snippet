@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+define( 'ASTRA_THEME_HTTP2', true );
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_DISPLAY', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'SCRIPT_DEBUG', true );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>debug {WP}</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
