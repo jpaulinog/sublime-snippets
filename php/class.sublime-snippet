@@ -51,7 +51,8 @@ if( ! class_exists( '${1:Class_Name}' ) ) :
 endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>class {PHP}</tabTrigger>
+	<tabTrigger>class</tabTrigger>
+	<description>PHP</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
