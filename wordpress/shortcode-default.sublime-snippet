@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${1:Shortcode Defination}
+ * 
+ * @todo Change the `prefix_` and with your own unique prefix.
+ * 
+ * @since 1.0.0
+ */
+if( ! function_exists( '${2:prefix_shortcode_callback}' ) ) :
+	function ${2:prefix_shortcode_callback}( \$atts, \$content ) {
+		\$atts = shortcode_atts( array(
+			'default' => 'value'
+		), \$atts );
+		
+		return ${4:'ok'};
+   }
+   add_shortcode( '${3:shortcode}', '${2:prefix_shortcode_callback}' );
+endif;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_shortcode_function</tabTrigger>
+	<description>WP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

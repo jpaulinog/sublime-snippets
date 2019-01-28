@@ -4,7 +4,7 @@
 /**
  * ${2: Class Description}
  *
- * @package CartFlows
+ * @package ${2: Class Description}
  */
 
 if( ! class_exists( '${1:Class_Name}' ) ) :
@@ -39,7 +39,7 @@ if( ! class_exists( '${1:Class_Name}' ) ) :
 		 * @since x.x.x
 		 */
 		public function __construct() {
-			${3: Write your code here..}
+			${3:// Write your code here..}
 		}
 	}
 
@@ -51,7 +51,7 @@ if( ! class_exists( '${1:Class_Name}' ) ) :
 endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>class</tabTrigger>
+	<tabTrigger>class_create_boilerplate</tabTrigger>
 	<description>PHP</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->

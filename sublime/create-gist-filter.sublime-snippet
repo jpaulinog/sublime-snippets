@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * ${3:Function Definition}
+ * 
+ * @todo Change the `prefix_` and with your own unique prefix.
+ * 
+ * @since 1.0.0
+ * 
+ * @return ${4:mixed}
+ */
+if( ! function_exists( '${2:prefix_function_name}' ) ) :
+	function ${2:prefix_function_name}( \$defaults ) {
+		${3:return \$defaults;}
+   }
+   add_filter( '${1:action_name}', '${2:prefix_function_name}' );
+endif;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>create_gist_filter</tabTrigger>
+	<description>PHP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

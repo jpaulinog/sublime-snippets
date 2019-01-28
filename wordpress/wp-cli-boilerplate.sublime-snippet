@@ -1,0 +1,45 @@
+<snippet>
+	<content><![CDATA[
+<?php
+/**
+ * ${2:Prefix WP CLI}
+ *
+ * 1. Run `wp ${3:prefix-command} info`		Info.
+ *
+ * @since 1.0.0
+ *
+ * @package ${2:Prefix WP CLI}
+ */
+
+if ( ! class_exists( '${1:Prefix_WP_CLI}' ) && class_exists( 'WP_CLI_Command' ) ) :
+
+	/**
+	 * ${2:Prefix WP CLI}
+	 */
+	class ${1:Prefix_WP_CLI} extends WP_CLI_Command {
+
+		/**
+		 * Info
+		 *
+		 * @param  array \$args       Arguments.
+		 * @param  array \$assoc_args Associated Arguments.
+		 * @return void
+		 */
+		public function info( \$args, \$assoc_args ) {			
+			WP_CLI::line( 'ok' );
+		}
+	}
+
+	/**
+	 * Add Command
+	 */
+	WP_CLI::add_command( '${3:prefix-command}', '${1:Prefix_WP_CLI}' );
+
+endif;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wp_cli_create_boilerplate</tabTrigger>
+	<description>WP CLI</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

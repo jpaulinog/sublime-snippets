@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+if( preg_match( '/\.(jpg|jpeg|png|gif)/i', ${1:\$string} ) ) {
+	${2:// Code Here..}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>preg_match_images</tabTrigger>
+	<description>PHP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
