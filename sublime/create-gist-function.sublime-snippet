@@ -14,7 +14,7 @@ if( ! function_exists( '${1:prefix_function_name}' ) ) :
 endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>create_gist_function</tabTrigger>
+	<tabTrigger>gist_create_function</tabTrigger>
 	<description>PHP</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->

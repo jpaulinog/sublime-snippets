@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'pre_http_request', function( \$default, \$r, \$url ){                          
+       ${1:error_log(\$url);}
+       ${2:return \$default;}
+}, 10 , 3 );                                                                             
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>debug_http_request</tabTrigger>
+	<description>WP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

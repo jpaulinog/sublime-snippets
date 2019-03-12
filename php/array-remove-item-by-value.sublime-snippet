@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+if ( ( \$key = array_search( '${1:search-item}', ${2:\$myarray}) ) !== false ) {
+	unset( ${2:\$myarray}[ \$key ] );
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>array_remove_item_by_value</tabTrigger>
+	<description>PHP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

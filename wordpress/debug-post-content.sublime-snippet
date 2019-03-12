@@ -1,14 +1,12 @@
 <snippet>
 	<content><![CDATA[
 add_action( 'wp_head', function() {
-	vl( get_post_meta( get_the_ID(), ${1:'post_meta'}, true ) );
-	${2:// vl( get_the_ID() );}
-	// vl( get_post_meta( get_the_ID(), 'meta_key', true ) );
+	vl( get_post_field( ${1:'post_content'}, ${2:get_the_id()} ) );
 	wp_die();
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>debug_wp_head</tabTrigger>
+	<tabTrigger>debug_post_content</tabTrigger>
 	<description>WP</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->

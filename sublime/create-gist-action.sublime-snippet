@@ -9,13 +9,13 @@
  */
 if( ! function_exists( '${2:prefix_function_name}' ) ) :
 	function ${2:prefix_function_name}() {
-		${1:// Code Here..}
+		${4:// Code Here..}
    }
    add_action( '${1:action_name}', '${2:prefix_function_name}' );
 endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>create_gist_action</tabTrigger>
+	<tabTrigger>gist_create_action</tabTrigger>
 	<description>PHP</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->

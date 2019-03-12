@@ -11,13 +11,13 @@
  */
 if( ! function_exists( '${2:prefix_function_name}' ) ) :
 	function ${2:prefix_function_name}( \$defaults ) {
-		${3:return \$defaults;}
+		${4:return \$defaults;}
    }
    add_filter( '${1:action_name}', '${2:prefix_function_name}' );
 endif;
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>create_gist_filter</tabTrigger>
+	<tabTrigger>gist_create_filter</tabTrigger>
 	<description>PHP</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
