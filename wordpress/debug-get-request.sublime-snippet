@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+add_action( 'admin_head', function() {
+
+	\$response = wp_remote_get( '${1:https://websitedemos.net/wp-json/wp/v2/posts}' );
+
+	echo '<pre>';
+	print_r( \$response );
+	wp_die();
+});                                                                         
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>debug_get_request</tabTrigger>
+	<description>WP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

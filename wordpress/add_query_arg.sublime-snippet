@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\$url = add_query_arg( array(
+	'post_type' => 'astra-portfolio',
+	'page'      => 'astra-portfolio',
+), admin_url( 'edit.php' ) );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_query_arg</tabTrigger>
+	<description>WP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
