@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Plugin Name: ${1:BSF Core Server Migration}
+ * Plugin URI: ${2:http://www.brainstormforce.com/}
+ * Description: Core server migration old data into new form.
+ * Version: 0.0.1
+ * Author: Brainstorm Force
+ * Author URI: ${2:http://www.brainstormforce.com/}
+ * Text Domain: ${2:bsf-server-migrate}
+ *
+ * @package bsf-server-migrate
+ * @author Brainstorm Force
+ */
+
+// WP CLI Commands & BSF Core Sever Activate.
+if ( defined( 'BSF_CS_VER' ) && defined( 'WP_CLI' ) ) {
+	require 'class-bsf-cs-wpcli-command.php';
+	require 'class-bsf-cs-mautic-update.php';
+	require 'class-mautic-correct.php';
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>plugin-main</tabTrigger>
+	<description>WP</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
